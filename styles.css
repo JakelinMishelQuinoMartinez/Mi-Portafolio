@@ -125,6 +125,23 @@ body {
     margin-top: 100px;
 }
 
+.interes, .hobbies{
+    font-size: 20px;
+    color: var(--fondo-oscuro);
+    padding-top: 30px;
+}
+
+.img_gustos {
+    height: 200px;
+    width: auto;
+    object-fit: cover; 
+    border: 10px double var(--texto-suave);
+    border-radius: 15%;
+    margin-top: 20px;
+    flex: auto;
+    box-shadow: 0 0 10px 10px var(--fondo-oscuro);
+}
+
 /*SECCIÓN: HABILIDADES*/
 #habilidades {
     justify-items: center;
@@ -138,6 +155,24 @@ body {
     font-size: 40px;
     margin-top: 100px;
 }
+
+.contenedor_skills {
+    margin-top: 30px;
+    display: flex; 
+    justify-content: center; 
+    gap: 40px; 
+    flex-wrap: wrap;
+}
+
+.soft_skills, .hard_skills {
+    box-shadow: 0 0 10px 10px var(--fondo-oscuro);
+    width: fit-content;
+    min-width: 300px;
+    border: 10px double var(--texto-suave);
+    border-radius: 40px;
+    margin-top: 20px;
+    padding: 20px;
+} 
 
 /*SECCIÓN: PROYECTOS*/
 #proyectos {
@@ -153,6 +188,27 @@ body {
     margin-top: 100px;
 }
 
+.proyecto_uno, .proyecto_dos, .proyecto_tres{
+    box-shadow: 0 0 10px 10px var(--fondo-oscuro);
+    width: fit-content;
+    min-width: 300px;
+    border: 10px double var(--texto-suave);
+    border-radius: 40px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.img_proyecto {
+    height: 200px;
+    width: auto;
+    object-fit: cover; 
+    border: 10px double var(--texto-suave);
+    border-radius: 15%;
+    margin-top: 20px;
+    flex: auto;
+    box-shadow: 0 0 10px 10px var(--fondo-oscuro);
+}
+
 /*SECCIÓN: CONTACTO*/
 #contacto {
     justify-items: center;
@@ -165,4 +221,13 @@ body {
     box-shadow: 0 0 10px 10px var(--fondo-oscuro);
     font-size: 40px;
     margin-top: 100px;
+}
+
+.img_icono{
+    height: 75px;
+    width: auto;
+    object-fit: cover; 
+    margin-top: 20px;
+    flex: auto;
+    box-shadow: 0 0 10px 10px var(--fondo-oscuro);
 }

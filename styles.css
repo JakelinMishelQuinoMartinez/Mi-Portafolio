@@ -24,7 +24,7 @@ body {
 
 .header_title {
     font-family: "Roboto Flex", sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     letter-spacing: 3px;
     margin: 10px 0 5px 0;
     color: var(--titulos-luz);
@@ -32,7 +32,7 @@ body {
 
 .header_subtitle {
     font-family: "Prata", serif;
-    font-size: 20px;
+    font-size: 2rem;
     letter-spacing: 3px;
     margin: 0 0 30px 0;
 }
@@ -53,7 +53,7 @@ body {
     color: var(--texto-suave);
     font-family: "Roboto Flex", sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .nav_link:hover {
@@ -71,33 +71,33 @@ body {
 
 .bienvenidos {
     box-shadow: 0 0 10px 10px var(--fondo-oscuro);
-    font-size: 40px;
+    font-size: 2.5em;
     margin-top: 100px;
 }
 
 .text_cargo {
-    font-size: 20px;
+    font-size: 1rem;
     color: var(--texto-suave);
     padding-top: 30px;
 }
 
 .text_perfil {
-    font-size: 20px;
+    font-size: 1rem;
     color: var(--texto-suave);
 }
 
 .frase {
-    font-size: 20px;
+    font-size: 1rem;
     color: var(--fondo-oscuro);
     padding-top: 30px;
 }
 
 .img_avatar {
-    width: 200px;
+    width: 300px;
     object-fit: cover; 
     border: 10px double var(--texto-suave);
     border-radius: 15%;
-    animation: aparecer 4s ease-out;
+    animation: aparecer 5s ease-out;
     margin-top: 20px;
 }
 
@@ -120,13 +120,19 @@ body {
 
 .title_sobremi{
     box-shadow: 0 0 10px 10px var(--fondo-oscuro);
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 100px;
 }
 
-.interes, .hobbies{
-    font-size: 30px;
-    color: var(--fondo-oscuro);
+.interes, .hobbies {
+    font-size: 1rem;
+    color: var(--titulos-luz);
+    padding-top: 30px;
+}
+
+.frase_sobremi, .area {
+    font-size: 1rem;
+    color: var(--texto-suave);
     padding-top: 30px;
 }
 
@@ -139,7 +145,7 @@ body {
 
 .hobby_text {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--texto-suave);
     letter-spacing: 1px;}
 
@@ -152,10 +158,9 @@ body {
     margin-top: 20px;}
 
 .img_gustos {
-    height: 200px;
+    height: 220px;
     width: auto;
     display: block;
-    border: 10px double var(--texto-suave);
     border-radius: 15%;
     box-shadow: 0 0 10px 10px var(--fondo-oscuro);
 }
@@ -170,7 +175,7 @@ body {
 
 .title_habilidades{
     box-shadow: 0 0 10px 10px var(--fondo-oscuro);
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 100px;
 }
 
@@ -185,7 +190,7 @@ body {
 .soft_skills, .hard_skills {
     box-shadow: 0 0 10px 10px var(--fondo-oscuro);
     width: fit-content;
-    min-width: 300px;
+    min-width: 20%;
     border: 10px double var(--texto-suave);
     border-radius: 40px;
     margin-top: 20px;
@@ -202,7 +207,7 @@ body {
 
 .title_proyectos{
     box-shadow: 0 0 10px 10px var(--fondo-oscuro);
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 100px;
 }
 
@@ -233,7 +238,6 @@ body {
     width: 100%;           
     height: 180px; 
     object-fit: cover; 
-    border: 5x double var(--texto-suave);
     border-radius: 15%;
     margin: 20px auto;
     box-shadow: 0 0 10px 10px var(--fondo-oscuro);
@@ -249,9 +253,9 @@ body {
 
 .title_contacto{
     box-shadow: 0 0 10px 10px var(--fondo-oscuro);
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 100px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .img_icono{
@@ -270,4 +274,37 @@ body {
     text-align: center;
     margin-top: 100px;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .header_title {
+        font-size: 24px; 
+    }
+        .nav_item {
+        display: block; 
+        margin: 10px 0;
+    }
+    .bienvenidos, .title_sobremi, .title_habilidades, .title_proyectos, .title_contacto {
+        font-size: 28px; 
+        margin-top: 50px;
+    }
+    .img_avatar {
+        width: 150px;   
+    }
+    .imagenes_gustos {
+        gap: 10px;
+    }
+    .img_gustos {
+        height: 150px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor_skills, .contenedor_proyectos {
+        gap: 10px;
+        padding: 0 10px;
+    } 
+    .proyecto_uno, .proyecto_dos, .proyecto_tres {
+        flex: 1 1 100%;   
+    }
 }

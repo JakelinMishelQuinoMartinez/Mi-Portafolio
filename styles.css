@@ -20,10 +20,6 @@ body {
     background-color: var(--fondo-oscuro);
     text-align: center;
     padding: 10px 0;
-    position: sticky;
-    top: 0;  
-    z-index: 1000;
-    margin-top: 50px;
 }
 
 .header_title {
@@ -129,19 +125,38 @@ body {
 }
 
 .interes, .hobbies{
-    font-size: 20px;
+    font-size: 30px;
     color: var(--fondo-oscuro);
     padding-top: 30px;
 }
 
+.hobby_item {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: fit-content;
+}
+
+.hobby_text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--texto-suave);
+    letter-spacing: 1px;}
+
+.imagenes_gustos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;}
+
 .img_gustos {
     height: 200px;
     width: auto;
-    object-fit: cover; 
+    display: block;
     border: 10px double var(--texto-suave);
     border-radius: 15%;
-    margin-top: 20px;
-    flex: auto;
     box-shadow: 0 0 10px 10px var(--fondo-oscuro);
 }
 
